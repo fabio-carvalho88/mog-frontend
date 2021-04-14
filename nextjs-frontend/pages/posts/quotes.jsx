@@ -22,7 +22,8 @@ const Quotes = ({ quotes }) => {
 }
 
 export const getStaticProps = async () => {
-    const res = await fetch('https://api.kanye.rest/');
+    const api = 'https://api.kanye.rest/'
+    const res = await fetch(`${api}`);
     const data = await res.json();
     return {
         props: { quotes: data }

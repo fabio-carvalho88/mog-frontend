@@ -17,8 +17,8 @@ const Stories = ({ stories }) => {
                     <div>
                         {stories.map((story) => (
                             <>
-                                <p className={styles.text}>
-                                    {story.title} - <label>{story.by}</label>
+                                <p className={styles.text} key={story.id}>
+                                    {story.title} <label className={styles.author}>by: {story.by}</label>
                                 </p>
                             </>
 
@@ -31,19 +31,18 @@ const Stories = ({ stories }) => {
 }
 
 export const getStaticProps = async () => {
-    const res = await fetch('https://hacker-news.firebaseio.com/v0/topstories.json');
+    const api = 'https://hacker-news.firebaseio.com/v0';
+    const res = await fetch(`${api}/topstories.json`);
     const data = await res.json();
     // Get the top 5 from the response
     const topFive = data.slice(0, 5);
 
     const dataTopFive = await Promise.all(topFive.map(async elem => {
-        const res = await fetch(`https://hacker-news.firebaseio.com/v0/item/${elem}.json?print=pretty`);
+        const api = 'https://hacker-news.firebaseio.com/v0/item'
+        const res = await fetch(`${api}/${elem}.json`);
         const data = await res.json();
-        console.log(data);
-        // topFiveArray.push(data);
         return data;
     }));
-
 
     return {
         props: { stories: dataTopFive }

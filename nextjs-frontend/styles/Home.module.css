@@ -120,6 +120,10 @@
   margin: 1rem auto;
 }
 
+.author {
+  font-size: 16px;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;
