@@ -12,7 +12,7 @@ export default function Home() {
             <a>to Kanye Rest!</a>
           </Link>
           <br />
-          <Link href='/hn'>
+          <Link href='/hackernews'>
             <a>and to HackerNews API!</a>
           </Link>
         </h1>
