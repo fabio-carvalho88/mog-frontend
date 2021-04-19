@@ -124,6 +124,31 @@
   font-size: 16px;
 }
 
+.cardContainer {
+  height: 100vh;
+}
+
+.cardColumn {
+  margin: 10rem auto;
+}
+
+.storyCard {
+  display: flex;
+  width: 500px;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.storyDescription {
+  display: flex;
+  justify-content: space-between;
+}
+
+.scoreBadge {
+  padding-bottom: 1rem !important;
+  padding-left: 0.3rem !important;
+}
+
 @media (max-width: 600px) {
   .grid {
     width: 100%;

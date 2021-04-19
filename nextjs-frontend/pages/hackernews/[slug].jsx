@@ -1,20 +1,48 @@
-import { useRouter } from 'next/router';
+import { Card, Col, Row, Badge } from 'antd';
+import styles from '../../styles/Home.module.css';
 
 const Story = ({ storyData }) => {
-  const { asPath } = useRouter();
-  console.log(storyData.url);
-
   return (
-    <div className='container'>
-      <h1>{storyData.title}</h1>
-      <p>From: {storyData.by}</p>
-      <p>Score: {storyData.score}</p>
-      <a target='_blank' href={storyData.url}>
-        View full story
-      </a>
+    <div className={styles.cardContainer}>
+      <Row>
+        <Col className={styles.cardColumn}>
+          <Card
+            className={styles.storyCard}
+            title={storyData.title}
+            bordered={false}
+          >
+            <div className={styles.storyDescription}>
+              <p>
+                From: {storyData.by}
+                <Badge
+                  className={styles.scoreBadge}
+                  count={storyData.score}
+                  style={{ background: getBadgeScore(storyData.score) }}
+                />
+              </p>
+              <a target='_blank' href={storyData.url}>
+                View full story
+              </a>
+            </div>
+          </Card>
+        </Col>
+      </Row>
     </div>
   );
 };
+
+function getBadgeScore(score) {
+  let color;
+  if (score < 25) {
+    color = '#B6371C';
+  } else if (score >= 25 && score <= 75) {
+    color = '#F0E32C';
+  } else if (score > 75) {
+    color = '#44DA29';
+  }
+
+  return color;
+}
 
 export const getServerSideProps = async (context) => {
   const api = 'https://hacker-news.firebaseio.com/v0/item';
