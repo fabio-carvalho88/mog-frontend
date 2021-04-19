@@ -1,8 +1,6 @@
 import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
 import { useRouter } from 'next/router';
-import { Layout, Menu } from 'antd';
-import 'antd/dist/antd.css';
 
 const Stories = ({ topStories }) => {
   const { pathname } = useRouter();

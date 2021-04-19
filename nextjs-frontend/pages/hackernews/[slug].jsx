@@ -2,6 +2,7 @@ import { Card, Col, Row, Badge } from 'antd';
 import styles from '../../styles/Home.module.css';
 
 const Story = ({ storyData }) => {
+  console.log(storyData);
   return (
     <div className={styles.cardContainer}>
       <Row>
@@ -10,6 +11,12 @@ const Story = ({ storyData }) => {
             className={styles.storyCard}
             title={storyData.title}
             bordered={false}
+            cover={
+              <img
+                alt='story-img'
+                src='https://images.unsplash.com/photo-1579532536935-619928decd08?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+              />
+            }
           >
             <div className={styles.storyDescription}>
               <p>

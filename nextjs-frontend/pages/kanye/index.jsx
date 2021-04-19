@@ -1,9 +1,4 @@
-import Link from 'next/link';
 import styles from '../../styles/Home.module.css';
-import { Layout, Menu } from 'antd';
-import 'antd/dist/antd.css';
-
-const { Header, Footer, Sider, Content } = Layout;
 
 const Quotes = ({ quotes }) => {
   return (
