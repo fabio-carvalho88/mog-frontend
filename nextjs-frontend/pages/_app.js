@@ -26,6 +26,11 @@ function MyApp({ Component, pageProps }) {
               <a>Hackernews</a>
             </Link>
           </Menu.Item>
+          <Menu.Item key='4'>
+            <Link href='/strapi'>
+              <a>Strapi API</a>
+            </Link>
+          </Menu.Item>
         </Menu>
       </Header>
       <Content>

@@ -114,6 +114,10 @@
   height: 1em;
 }
 
+.productsRow {
+  margin-top: 2rem;
+}
+
 .text {
   font-size: 24px;
   text-align: center;
