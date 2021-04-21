@@ -9,9 +9,8 @@ const Products = ({ products }) => {
       <h1 className={styles.title}>MOG PRODUCTS</h1>
       <Row className={styles.productsRow} justify='center' gutter={16}>
         {products.map((product) => (
-          <Col span={8}>
+          <Col span={8} key={product.id}>
             <Card
-              key={product.id}
               bordered={false}
               cover={
                 <img alt='product-img' src={`${api}${product.image[0].url}`} />
