@@ -143,6 +143,14 @@
   justify-content: space-between;
 }
 
+.productsCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: fit-content;
+  min-height: 350px;
+}
+
 .storyDescription {
   display: flex;
   justify-content: space-between;
