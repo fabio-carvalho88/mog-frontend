@@ -1,9 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -13,4 +14,126 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+.ant-layout {
+  background: #000;
+}
+
+.ant-menu {
+  background: transparent !important;
+}
+
+/* .ant-layout-header {
+  background: transparent;
+} */
+
+/* .ant-layout-content {
+  background: url('../assets/img/MicrosoftTeams-image.png');
+  background-position: center;
+  background-size: cover;
+} */
+
+.ant-layout-header {
+  background: #010a13bd;
+}
+
+/* .Home_title__3DjR7 {
+  color: #fff;
+} */
+
+.Home_main__1x8gC {
+  justify-content: start !important;
+}
+
+.ant-menu-vertical {
+  width: 100vw !important;
+  background: #fff !important;
+}
+
+.SubMenuContent_links__1udwc {
+  color: #333;
+}
+
+.anticon-search svg {
+  color: #fff !important;
+  font-weight: bold !important;
+}
+
+.productsCatalogue {
+  display: flex;
+  flex-direction: column;
+  /* align-items: baseline; */
+  /* line-height: 25px; */
+}
+
+.texts {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+}
+
+.description {
+  padding-top: 1rem;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.productName {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+}
+
+.productsLinks {
+  margin-top: 1rem;
+  line-height: 15px;
+  padding-left: 1rem;
+}
+
+.icon {
+  font-size: 20px;
+  /* padding: 0.5rem; */
+}
+
+.anticon svg {
+  line-height: 0;
+  color: #333;
+}
+
+.ant-modal-mask {
+  background-color: rgba(0, 0, 0, 0.87) !important;
+}
+
+.ant-modal-content {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  height: 1000px !important;
+}
+
+.ant-modal-header {
+  background-color: rgba(0, 0, 0, 0.185) !important;
+  border-bottom: none !important;
+  text-align: center !important;
+}
+
+.ant-modal-title {
+  color: #fff !important;
+}
+
+.ant-modal-footer {
+  border-top: none !important;
+}
+
+.ant-modal-close {
+  color: #fff !important;
+}
+
+.ant-input-group-wrapper {
+  border: none !important;
+}
+
+.ant-input-affix-wrapper,
+.ant-input,
+.ant-input-group-addon {
+  background-color: transparent !important;
+  border: none !important;
 }
