@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div className={styles.homeContainer}>
       <main className={styles.main}>
         <h1 className={styles.title} style={{ width: '75%' }}>
           Transforming the way Content is created in the Cloud.

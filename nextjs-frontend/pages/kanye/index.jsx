@@ -5,7 +5,7 @@ const Quotes = ({ quotes }) => {
     <div className={styles.container}>
       <h1 className={styles.title}>Kanye Rest - The Best API ever</h1>
       <div></div>
-      <p className={styles.text}>{quotes.quote}</p>
+      <p className={styles.quote}>{quotes.quote}</p>
     </div>
   );
 };

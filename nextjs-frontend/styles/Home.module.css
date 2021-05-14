@@ -1,3 +1,15 @@
+.homeContainer {
+  min-height: 100vh;
+  padding: 0 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url('../assets/img/MicrosoftTeams-image.png');
+  background-position: center;
+  background-size: cover;
+}
+
 .container {
   min-height: 100vh;
   padding: 0 0.5rem;
@@ -50,6 +62,7 @@
   margin: 0;
   line-height: 1.15;
   font-size: 4rem;
+  color: #fff;
 }
 
 .title,
@@ -122,6 +135,11 @@
   font-size: 24px;
   text-align: center;
   margin: 1rem auto;
+  color: #fff;
+}
+
+.quote {
+  color: #fff;
 }
 
 .author {
