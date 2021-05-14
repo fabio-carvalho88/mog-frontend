@@ -6,15 +6,8 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome{' '}
-          <Link href='/kanye'>
-            <a>to Kanye Rest!</a>
-          </Link>
-          <br />
-          <Link href='/hackernews'>
-            <a>and to HackerNews API!</a>
-          </Link>
+        <h1 className={styles.title} style={{ width: '75%' }}>
+          Transforming the way Content is created in the Cloud.
         </h1>
       </main>
     </div>
