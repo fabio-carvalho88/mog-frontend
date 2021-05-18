@@ -1,0 +1,13 @@
+.tabs {
+  margin: 20px;
+}
+
+.tabs.ant-tabs-tab {
+  font-weight: bold !important;
+}
+
+.tabPanel{
+  display: inline-flex;
+  width: 100%;
+  justify-content: space-between;
+}
