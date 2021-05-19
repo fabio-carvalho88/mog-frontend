@@ -1,13 +1,15 @@
-import 'antd/dist/antd.css';
-import { Card, Badge } from 'antd';
-import styles from './CardHighlight.module.css';
+import "antd/dist/antd.css";
+import { Card, Badge } from "antd";
+import styles from "./CardHighlight.module.css";
 
-const CardHighlights = (props) => {
+const CardHighlight = (props) => {
   return (
-    <div className='wrapper'>
+    <div className="wrapper">
       <Card
-        style={{ width: '550px', height: 'auto' }}
-        cover={<img alt='card-highlight-img' src={props.image} />}
+        className="cardHighlight"
+        style={{ width: "550px", height: "auto" }}
+        cover={<img alt="card-highlight-img" src={props.image} />}
+        bodyStyle={{ padding: 0 }}
       />
       <div className={styles.cardContent}>
         <label className={styles.cardLabel}>{props.labelText}</label>
@@ -17,4 +19,4 @@ const CardHighlights = (props) => {
   );
 };
 
-export default CardHighlights;
+export default CardHighlight;
