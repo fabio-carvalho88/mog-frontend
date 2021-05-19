@@ -1,13 +1,9 @@
 .homeContainer {
   min-height: 100vh;
-  padding: 0 0.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url('../assets/img/MicrosoftTeams-image.png');
-  background-position: center;
-  background-size: cover;
 }
 
 .container {
@@ -19,18 +15,28 @@
   align-items: center;
 }
 
-.main {
+.header {
+  width: 100%;
+  min-height: 1100px;
   padding: 5rem 0;
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
+  background: url('../assets/img/header_backg.png');
+  background-position: center;
+  background-size: cover;
+}
+
+.insights {
+  min-height: 100vh;
 }
 
 .footer {
   width: 100%;
-  height: 100px;
+  height: fit-content;
+  /* background: linear-gradient(180deg, #1a1a25 0%, #1a1a25 100%); */
+  color: #fff;
   border-top: 1px solid #eaeaea;
   display: flex;
   justify-content: center;
@@ -60,9 +66,20 @@
 
 .title {
   margin: 0;
-  line-height: 1.15;
-  font-size: 4rem;
+  line-height: 70px;
+  font-size: 40px;
+  font-weight: 700;
   color: #fff;
+  padding-top: 2rem;
+}
+
+.gradientText {
+  background: -webkit-linear-gradient(left, #006aff, #fff);
+  background: -o-linear-gradient(right, #006aff, #fff);
+  background: -moz-linear-gradient(right, #006aff, #fff);
+  background: linear-gradient(to right, #006aff, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .title,
@@ -71,6 +88,9 @@
 }
 
 .description {
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: 600;
   line-height: 1.5;
   font-size: 1.5rem;
 }
@@ -166,7 +186,7 @@
   flex-direction: column;
   justify-content: space-between;
   width: fit-content;
-  min-height: 350px;
+  min-height: 370px;
 }
 
 .storyDescription {

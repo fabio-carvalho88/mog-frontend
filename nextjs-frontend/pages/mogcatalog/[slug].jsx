@@ -1,17 +1,22 @@
 import { Layout, Row, Col, Image } from 'antd';
-import styles from '../../styles/Home.module.css';
 
 const Product = ({ productData }) => {
   const api = 'http://localhost:1337';
-  // console.log('DATA:' + JSON.stringify(productData));
-  console.log(productData.localizations);
-
   const { Content } = Layout;
+
   return (
     <Layout>
       <Content style={{ minHeight: '600px' }}>
-        <Row style={{ marginTop: '1rem' }}>
-          <Col span={12} offset={6}>
+        <Row style={{ marginTop: '5rem', color: '#fff' }}>
+          <Col
+            span={12}
+            offset={6}
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              flexDirection: 'column',
+            }}
+          >
             <Image width={200} src={`${api}${productData.image[0].url}`} />
             <h2>{productData.model}</h2>
             <h5>{productData.family}</h5>

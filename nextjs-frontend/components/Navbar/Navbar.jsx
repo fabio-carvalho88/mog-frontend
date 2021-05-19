@@ -1,10 +1,11 @@
-import { Menu, Tooltip, Button } from 'antd';
-import { useState } from 'react';
+import { Menu, Tooltip, Button, Image } from 'antd';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import SubMenuContent from '../SubMenuContent/SubMenuContent';
-import SearchModal from '../Search/SearchModal';
+import SearchModal from '../SearchModal/SearchModal';
 import SelectLanguage from '../SelectLanguage';
 import { SearchOutlined } from '@ant-design/icons';
+import styles from './Navbar.module.css';
 
 const { SubMenu } = Menu;
 
@@ -25,9 +26,13 @@ const Navbar = () => {
 
   return (
     <Menu theme='dark' mode='horizontal'>
-      <Menu.Item key='1'>
+      <Menu.Item style={{ float: 'left' }}>
         <Link href='/'>
-          <a>Homepage</a>
+          <Image
+            width={100}
+            preview={false}
+            src='http://www.squarebox.com/wp-content/uploads/images/Mog-300x130.png'
+          />
         </Link>
       </Menu.Item>
 
