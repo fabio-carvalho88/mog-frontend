@@ -28,7 +28,16 @@ export default function Home() {
           From Unified Media Workflows to Virtualization, Cloud Services, OTT
           Platforms, and more.
         </p>
-        <Button type="primary" size={"large"} style={{ marginTop: "1.5rem" }}>
+        <Button
+          type="primary"
+          size={"large"}
+          style={{
+            marginTop: "1.5rem",
+            width: "200px",
+            height: "50px",
+            borderRadius: "5px",
+          }}
+        >
           Find out how
         </Button>
       </main>
