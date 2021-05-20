@@ -23,12 +23,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../assets/img/header_backg.png");
+  background: url('../assets/img/header_backg.png');
   background-position: center;
   background-size: cover;
 }
 
-.insights {
+.insights,
+.customerStories {
   min-height: 100vh;
 }
 

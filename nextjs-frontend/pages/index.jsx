@@ -1,9 +1,9 @@
-import Head from "next/head";
-import styles from "../styles/Home.module.css";
-import Link from "next/link";
-import { Button, Row, Col } from "antd";
-import CardHighlight from "../components/Card/CardHighlight";
-import CardHorizontal from "../components/Card/CardHorizontal";
+import Head from 'next/head';
+import styles from '../styles/Home.module.css';
+import Link from 'next/link';
+import { Button, Row, Col, Carousel } from 'antd';
+import CardHighlight from '../components/Card/CardHighlight';
+import CardHorizontal from '../components/Card/CardHorizontal';
 
 export default function Home() {
   return (
@@ -11,46 +11,46 @@ export default function Home() {
       <main className={styles.header}>
         <h1
           className={styles.title}
-          style={{ width: "750px", lineHeight: "1.5" }}
+          style={{ width: '750px', lineHeight: '1.5' }}
         >
-          Transforming the way Content is{" "}
+          Transforming the way Content is{' '}
           <span className={styles.gradientText}>Created</span> in the Cloud.
         </h1>
         <p
           className={styles.description}
           style={{
-            color: "#fff",
-            paddingTop: "2rem",
-            fontSize: "18px",
-            fontFamily: "Inter",
+            color: '#fff',
+            paddingTop: '2rem',
+            fontSize: '18px',
+            fontFamily: 'Inter',
           }}
         >
           From Unified Media Workflows to Virtualization, Cloud Services, OTT
           Platforms, and more.
         </p>
         <Button
-          type="primary"
-          size={"large"}
+          type='primary'
+          size={'large'}
           style={{
-            marginTop: "1.5rem",
-            width: "200px",
-            height: "50px",
-            borderRadius: "5px",
+            marginTop: '1.5rem',
+            width: '200px',
+            height: '50px',
+            borderRadius: '5px',
           }}
         >
           Find out how
         </Button>
       </main>
-      <section class={styles.insights}>
+      <section className={styles.insights}>
         <div
-          className="container"
+          className='container'
           style={{
-            display: "flex",
-            margin: "50px 0",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-            paddingTop: "100px",
+            display: 'flex',
+            margin: '50px 0',
+            justifyContent: 'center',
+            alignItems: 'center',
+            flexDirection: 'column',
+            paddingTop: '100px',
           }}
         >
           <h4>What's New?</h4>
@@ -60,30 +60,66 @@ export default function Home() {
             <Col>
               <CardHighlight
                 image={
-                  "https://images.unsplash.com/photo-1594394489098-74ac04c0fc2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                  'https://images.unsplash.com/photo-1594394489098-74ac04c0fc2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
                 }
-                title="Scripted TV Productions can Afford no Downtime"
-                labelText="White Paper"
+                title='Scripted TV Productions can Afford no Downtime'
+                labelText='White Paper'
               />
             </Col>
             <Col>
               <Row>
                 <CardHorizontal
                   image={
-                    "https://images.unsplash.com/photo-1594394489098-74ac04c0fc2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    'https://images.unsplash.com/photo-1594394489098-74ac04c0fc2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
                   }
                 />
               </Row>
               <Row>
                 <CardHorizontal
                   image={
-                    "https://images.unsplash.com/photo-1594394489098-74ac04c0fc2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80"
+                    'https://images.unsplash.com/photo-1594394489098-74ac04c0fc2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
                   }
                 />
               </Row>
             </Col>
           </Row>
         </div>
+      </section>
+
+      <section
+        className={styles.customerStories}
+        style={{ backgroundColor: '#333' }}
+      >
+        <Carousel arrow style={{ width: '95vw' }}>
+          <div>
+            <CardHighlight
+              image={
+                'https://images.unsplash.com/photo-1594394489098-74ac04c0fc2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+              }
+            />
+          </div>
+          <div>
+            <CardHighlight
+              image={
+                'https://images.unsplash.com/photo-1594394489098-74ac04c0fc2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+              }
+            />
+          </div>
+          <div>
+            <CardHighlight
+              image={
+                'https://images.unsplash.com/photo-1594394489098-74ac04c0fc2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+              }
+            />
+          </div>
+          <div>
+            <CardHighlight
+              image={
+                'https://images.unsplash.com/photo-1594394489098-74ac04c0fc2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+              }
+            />
+          </div>
+        </Carousel>
       </section>
     </div>
   );
