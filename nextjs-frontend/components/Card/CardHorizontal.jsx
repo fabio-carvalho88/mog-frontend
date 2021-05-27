@@ -1,19 +1,30 @@
-import "antd/dist/antd.css";
-import { Card, Badge } from "antd";
-import styles from "./CardHighlight";
+import 'antd/dist/antd.css';
+import { Card, Badge } from 'antd';
+import styles from './CardHighlight';
 
 const CardHorizontal = (props) => {
   return (
-    <div className="wrapper">
+    <div className='wrapper'>
       <Card
-        className="cardHorizontal"
+        className='cardHorizontal'
         style={{
-          display: "flex",
-          flexDirection: "row",
-          width: "550px",
-          height: "auto",
+          display: 'flex',
+          flexDirection: 'row',
+          width: '560px',
+          height: '250px',
+          borderRadius: '8px',
         }}
-        cover={<img alt="card-highlight-img" src={props.image} />}
+        cover={
+          <img
+            alt='card-highlight-img'
+            src={props.image}
+            style={{
+              height: '250px',
+              borderTopLeftRadius: '8px',
+              borderBottomLeftRadius: '8px',
+            }}
+          />
+        }
       >
         <h2>{props.title}</h2>
         <p>{props.description}</p>

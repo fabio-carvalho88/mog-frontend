@@ -1,5 +1,4 @@
 .homeContainer {
-  min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,8 +15,9 @@
 }
 
 .header {
+  position: relative;
   width: 100%;
-  min-height: 130vh;
+  min-height: 140vh;
   padding: 5rem 0;
   flex: 1;
   display: flex;
@@ -30,7 +30,7 @@
 
 .insights,
 .customerStories {
-  min-height: 100vh;
+  min-height: 120vh;
 }
 
 .footer {
