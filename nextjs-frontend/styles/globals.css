@@ -1,10 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 a {
@@ -17,30 +18,31 @@ a {
 }
 
 .ant-layout {
-  background: #000;
+  background: #fff;
 }
 
 .ant-menu {
   background: transparent !important;
 }
 
-/* .ant-layout-header {
-  background: transparent;
-} */
-
-/* .ant-layout-content {
-  background: url('../assets/img/MicrosoftTeams-image.png');
-  background-position: center;
-  background-size: cover;
-} */
-
-.ant-layout-header {
-  background: #010a13bd;
+.ant-menu .ant-image {
+  vertical-align: middle;
 }
 
-/* .Home_title__3DjR7 {
-  color: #fff;
-} */
+.ant-menu-item a,
+.ant-menu-submenu .ant-menu-submenu-title {
+  color: #fff !important;
+  font-weight: 500;
+}
+
+.ant-layout-header {
+  background: transparent;
+}
+
+.cardHorizontal .ant-card-cover {
+  width: 50%;
+  height: 100%;
+}
 
 .Home_main__1x8gC {
   justify-content: start !important;
@@ -75,12 +77,12 @@ a {
 
 .description {
   padding-top: 1rem;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 
 .productName {
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 600;
 }
 

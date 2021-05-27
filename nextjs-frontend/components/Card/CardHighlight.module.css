@@ -1,0 +1,34 @@
+.ant-card {
+  position: relative;
+}
+
+.ant-card.ant-card-body {
+  padding: 0;
+}
+
+.cardHighlight.ant-card-body {
+  padding: 0;
+}
+
+.cardHorizontal.and-card-cover {
+  width: 25%;
+}
+
+.cardContent {
+  position: absolute;
+  width: 75%;
+  bottom: 5%;
+  left: 10%;
+  text-align: left;
+}
+.cardTitle {
+  color: #fff;
+  font-weight: 700;
+  font-size: 24px;
+}
+
+.cardLabel {
+  background-color: #006aff;
+  border-radius: 2px;
+  color: #fff;
+}
