@@ -23,16 +23,170 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url('../assets/img/header_backg.png');
+  background: url("../assets/img/header_backg.png");
   background-position: center;
   background-size: cover;
 }
 
-.insights,
-.customerStories {
-  min-height: 120vh;
+.header .gradientText {
+  background: -webkit-linear-gradient(left, #006aff, #fff);
+  background: -o-linear-gradient(right, #006aff, #fff);
+  background: -moz-linear-gradient(right, #006aff, #fff);
+  background: linear-gradient(to right, #006aff, #fff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
+.header .title,
+.header .description {
+  text-align: center;
+}
+
+.header .title {
+  margin: 0;
+  line-height: 70px;
+  font-size: 48px;
+  font-weight: 700;
+  color: #fff;
+  padding-top: 4rem;
+  width: 60%;
+}
+
+.header .description {
+  font-family: "Inter", sans-serif;
+  color: #f7f6fe;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 180%;
+  padding-top: 2rem;
+  letter-spacing: 0.05em;
+}
+
+.header .button {
+  margin-top: 1.5rem;
+  width: 200px;
+  height: 50px;
+  border-radius: 8px;
+  font-weight: bold;
+  color: #f7f6fe;
+  background: #006aff;
+  border: none;
+}
+
+.header .subtitle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  position: absolute;
+  bottom: 30px;
+}
+
+.header .subtitle h3 {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 43px;
+  color: #f7f6fe;
+}
+
+.productsWrapper {
+  padding: 100px 0;
+}
+
+.productsHeader,
+.insightsHeader {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+  padding-bottom: 50px;
+}
+
+.productsHeader h5,
+.insightsHeader h5,
+.solutionsHeader h5 {
+  font-size: 18px;
+  font-weight: bold;
+  color: #006aff;
+  letter-spacing: 0.1em;
+}
+
+.productsHeader h2,
+.insightsHeader h2,
+.solutionsHeader h2 {
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 70px;
+}
+
+.productsHeader p,
+.insightsHeader p,
+.solutionsHeader p {
+  font-family: "Inter", sans-serif;
+  line-height: 150%;
+  font-size: 16px;
+}
+
+.solutionsHeader h2,
+.solutionsHeader p {
+  color: #fff;
+}
+
+.productsTabs {
+  width: 80%;
+  margin: auto;
+}
+
+.productsButton {
+  text-align: center;
+}
+
+.insights {
+  padding-top: 100px;
+  padding-bottom: 158px;
+}
+
+.solutionsContainer {
+  background: linear-gradient(180deg, #141416 0%, #1a1a25 100%);
+}
+
+.solutionsWrapper {
+  padding: 118px 0;
+  width: 80%;
+  margin: auto !important;
+}
+
+.solutionsHeader {
+  width: 80%;
+}
+
+.solutionsCards {
+  display: flex;
+  justify-content: center;
+}
+
+.contactContainer {
+  text-align: center;
+  padding: 100px;
+  background: linear-gradient(180deg, #1a1a25 0%, #1a1a25 100%);
+  width: 100%;
+}
+
+.contactContainer h2 {
+  color: #fff;
+  font-size: 36px;
+}
+
+.contactContainer .contactButton {
+  background: #006aff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  height: 59px;
+  width: 205px;
+  font-size: 16px;
+}
+
+/* OTHER CSS */
 .footer {
   width: 100%;
   height: fit-content;
@@ -63,55 +217,6 @@
 .title a:focus,
 .title a:active {
   text-decoration: underline;
-}
-
-.title {
-  margin: 0;
-  line-height: 70px;
-  font-size: 40px;
-  font-weight: 700;
-  color: #fff;
-  padding-top: 4rem;
-}
-
-.gradientText {
-  background: -webkit-linear-gradient(left, #006aff, #fff);
-  background: -o-linear-gradient(right, #006aff, #fff);
-  background: -moz-linear-gradient(right, #006aff, #fff);
-  background: linear-gradient(to right, #006aff, #fff);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.title,
-.description {
-  text-align: center;
-}
-
-.description {
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: 600;
-  line-height: 1.5;
-  font-size: 1.5rem;
-}
-
-.code {
-  background: #fafafa;
-  border-radius: 5px;
-  padding: 0.75rem;
-  font-size: 1.1rem;
-  font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
-    Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
-  margin-top: 3rem;
 }
 
 .card {
@@ -198,11 +303,4 @@
 .scoreBadge {
   padding-bottom: 1rem !important;
   padding-left: 0.3rem !important;
-}
-
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
-  }
 }
