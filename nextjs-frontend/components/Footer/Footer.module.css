@@ -1,0 +1,85 @@
+.footerContainer {
+  background: linear-gradient(180deg, #1A1A25 0%, #1A1A25 100%);
+  color: #fff;
+  font-family: "Inter", sans-serif;
+}
+
+.footerWrapper {
+  padding: 85px 0;
+  width: 80%;
+  margin: auto;
+}
+
+.contactsWrapper {
+  font-size: 16px;
+  line-height: 150%;
+}
+
+.contactsWrapper .contacts {
+  display: flex;
+  flex-direction: column;
+}
+
+.contactsEmail {
+  padding-top: 40px;
+}
+
+.contactsEmail,
+.contactsPhone {
+  display: inline-flex;
+}
+
+.contactsEmail p,
+.contactsPhone .phoneNumbers {
+  display: block;
+  padding-left: 12px;
+}
+
+.footerWrapper h5 {
+  color: #006aff;
+  font-size: 22px;
+}
+
+.footerWrapper .footerLinks {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+  line-height: 40px;
+}
+
+.footerWrapper .divider {
+  border: 1px solid #b0b3bf;
+  width: 100%;
+  margin: 40px 0;
+}
+
+.footerSocialMedia {
+  justify-content: space-between;
+}
+
+.footerSocialMedia .socialMedia {
+  display: inline-flex;
+}
+
+.socialMedia p {
+  font-weight: bold;
+  color: #006aff;
+  padding-right: 12px;
+  justify-content: center;
+  margin: auto;
+}
+
+.socialMedia .button {
+  background-color: #717171;
+  border: none;
+  margin: 0 5px;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.socialMedia .button:hover {
+  background-color: #006aff;
+}
