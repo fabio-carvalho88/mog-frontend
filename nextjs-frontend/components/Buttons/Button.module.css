@@ -1,14 +1,8 @@
 .btn {
-  border: 1px solid #1890ff;
   border-radius: 8px;
   background: none;
-  color: #1890ff;
   font-weight: bold;
   margin-top: 20px;
   height: 64px;
   width: 282px;
-}
-
-.btn .icon svg {
-  color: #006aff;
 }
