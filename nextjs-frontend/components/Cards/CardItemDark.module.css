@@ -1,0 +1,43 @@
+.card {
+  max-width: 272px;
+  min-height: 293px;
+  padding: 26px;
+  border-radius: 8px;
+  background-color: #252529;
+  color: #f7f6fe;
+  margin-bottom: 16px;
+  margin-right: 0;
+}
+
+.card h2 {
+  color: #f7f6fe;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 30px;
+}
+
+.card p {
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "Inter", sans-serif;
+  line-height: 150%;
+}
+
+.card:hover {
+  background: linear-gradient(180deg, #006aff 0%, #3f37c9 100%);
+  box-shadow: 0px 4px 35px rgba(124, 125, 138, 0.25);
+  cursor: pointer;
+}
+
+.card .icon {
+  font-size: 150%;
+  padding-bottom: 30px;
+}
+
+.card .icon svg {
+  color: #006aff;
+}
+
+.card:hover .icon svg {
+  color: #fff;
+}
