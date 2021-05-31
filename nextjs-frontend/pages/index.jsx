@@ -1,7 +1,7 @@
 import styles from '../styles/Home.module.css';
 import { Button, Row, Col, Carousel, Image } from 'antd';
-import CardHighlight from '../components/Card/CardHighlight';
-import CardHorizontal from '../components/Card/CardHorizontal';
+import CardHighlight from '../components/Cards/CardHighlight';
+import CardHorizontal from '../components/Cards/CardHorizontal';
 import HomeCarousel from '../components/Carousel/HomeCarousel';
 import Filter from '../components/Tabs/Tabs';
 import Btn from '../components/Buttons/Button';
