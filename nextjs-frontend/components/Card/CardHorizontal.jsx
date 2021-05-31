@@ -10,8 +10,8 @@ const CardHorizontal = (props) => {
         style={{
           display: 'flex',
           flexDirection: 'row',
-          width: '560px',
-          height: '250px',
+          width: '100%',
+          height: '100%',
           borderRadius: '8px',
         }}
         cover={

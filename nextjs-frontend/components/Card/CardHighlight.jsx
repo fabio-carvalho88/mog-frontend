@@ -7,7 +7,7 @@ const CardHighlight = (props) => {
     <div className='wrapper'>
       <Card
         className='cardHighlight'
-        style={{ width: '550px', height: '520px', borderRadius: '8px' }}
+        style={{ width: '100%', height: '520px', borderRadius: '8px' }}
         bodyStyle={{ padding: 0 }}
       >
         <img

@@ -1,11 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 html,
 body {
   padding: 0;
   margin: 0;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 
 a {
@@ -77,12 +77,12 @@ a {
 
 .description {
   padding-top: 1rem;
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
 
 .productName {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-weight: 600;
 }
 
@@ -138,4 +138,36 @@ a {
 .ant-input-group-addon {
   background-color: transparent !important;
   border: none !important;
+}
+
+/* Carousel styling */
+
+.ant-carousel {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 80%;
+}
+
+.ant-carousel .slick-track {
+  display: flex;
+  flex-direction: row;
+}
+
+.ant-carousel .slick-slide {
+  flex: 1 1 auto;
+  margin: 5px;
+  text-align: center;
+  height: 160px;
+  line-height: 160px;
+  background: #364d79;
+  overflow: hidden;
+}
+
+/* .ant-carousel .slick-list .slick-slide.slick-current {
+  transform: scale(1.5);
+} */
+
+.ant-carousel .slick-slide h3 {
+  color: #fff;
 }
