@@ -1,7 +1,9 @@
-import styles from "../styles/Home.module.css";
-import {Button, Row, Col, Carousel, Image} from "antd";
-import CardHighlight from "../components/Card/CardHighlight";
-import CardHorizontal from "../components/Card/CardHorizontal";
+
+import styles from '../styles/Home.module.css';
+import { Button, Row, Col, Carousel, Image } from 'antd';
+import CardHighlight from '../components/Card/CardHighlight';
+import CardHorizontal from '../components/Card/CardHorizontal';
+import HomeCarousel from '../components/Carousel/HomeCarousel';
 import Filter from "../components/Tabs/Tabs";
 import Btn from "../components/Buttons/Button";
 import CardItemDark from "../components/Cards/CarditemDark";
@@ -90,6 +92,66 @@ export default function Home() {
           </div> */}
         </div>
       </main>
+
+
+      <section className={styles.insights}>
+        <div
+          className='insightsWrapper'
+          style={{
+            display: 'flex',
+            flexDirection: 'column',
+            width: '80%',
+            margin: 'auto',
+          }}
+        >
+          <div className={styles.insightsHeader}>
+            <h4>What's New?</h4>
+            <h2>MOG Insights</h2>
+            <p>
+              Stay up to date with our latests news, articles and resources.
+            </p>
+          </div>
+          <div className={styles.insightsCarousel}>
+            <Row gutter={[16]}>
+              <Col span={12}>
+                <CardHighlight
+                  image={
+                    'https://images.unsplash.com/photo-1532456164788-984c62717cf8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1000&q=80'
+                  }
+                  title='Scripted TV Productions can Afford no Downtime'
+                  labelText='White Paper'
+                />
+              </Col>
+              <Col
+                span={12}
+                style={{
+                  display: 'flex',
+                  flexDirection: 'column',
+                  justifyContent: 'space-between',
+                }}
+              >
+                <CardHorizontal
+                  image={
+                    'https://images.unsplash.com/photo-1594394489098-74ac04c0fc2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+                  }
+                />
+                <CardHorizontal
+                  image={
+                    'https://images.unsplash.com/photo-1594394489098-74ac04c0fc2e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1050&q=80'
+                  }
+                />
+              </Col>
+            </Row>
+          </div>
+        </div>
+      </section>
+
+      <section className={styles.customerStories}>
+        <h4>Customer Stories</h4>
+        <h2>Check out our latest projects</h2>
+        {/* <Button /> */}
+        <HomeCarousel />
+      </section> 
 
       {/* PRODUCTS */}
       <div className={styles.productsContainer}>

@@ -28,6 +28,33 @@
   background-size: cover;
 }
 
+
+.insights {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  margin: 50px 0;
+}
+
+.insightsHeader {
+  /* width: 50%;
+  margin: auto; */
+  text-align: center;
+  /* padding-bottom: 50px; */
+}
+
+.insightsCarousel {
+  display: flex;
+  justify-content: center;
+}
+
+.customerStories {
+  display: flex;
+  flex-direction: column;
+  min-height: 120vh;
+  width: 80%;
+
 .header .gradientText {
   background: -webkit-linear-gradient(left, #006aff, #fff);
   background: -o-linear-gradient(right, #006aff, #fff);
