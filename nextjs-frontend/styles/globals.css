@@ -146,7 +146,7 @@ a {
   display: flex;
   flex-direction: column;
   align-content: space-between;
-  width: 80%;
+  /* width: 80%; */
 }
 
 .ant-carousel .slick-track {
@@ -158,7 +158,8 @@ a {
   flex: 1 1 auto;
   margin: 5px;
   text-align: center;
-  height: 160px;
+  height: 300px;
+  width: 550px;
   line-height: 160px;
   background: #364d79;
   overflow: hidden;

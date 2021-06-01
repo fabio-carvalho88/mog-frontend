@@ -1,0 +1,21 @@
+.homeCarousel {
+  margin-top: 40px;
+}
+
+.carouselCards {
+  width: 560px;
+  height: 400px;
+}
+
+.carouselControllers {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: flex-end;
+}
+
+.slickNext,
+.slickPrev {
+  padding: 10px;
+  font-size: 30px;
+}

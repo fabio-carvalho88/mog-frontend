@@ -109,7 +109,12 @@ export default function Home() {
             <Filter />
           </div>
           <div className={styles.productsButton}>
-            <Btn border='#006AFF' color='#006AFF' btnIconColor='#006AFF'>
+            <Btn
+              border='#006AFF'
+              color='#006AFF'
+              btnIconColor='#006AFF'
+              marginTop='20px'
+            >
               Explore all our products
             </Btn>
           </div>
@@ -151,6 +156,16 @@ export default function Home() {
               </Col>
             </Row>
           </div>
+          <div className={styles.btnInsightsWrapper}>
+            <Btn
+              border='#006AFF'
+              color='#006AFF'
+              btnIconColor='#006AFF'
+              marginTop='20px'
+            >
+              Explore more Insights
+            </Btn>
+          </div>
         </div>
       </section>
 
@@ -170,7 +185,12 @@ export default function Home() {
               </p>
             </div>
             <div>
-              <Btn border='#fff' color='#fff' btnIconColor='#fff'>
+              <Btn
+                border='#fff'
+                color='#fff'
+                btnIconColor='#fff'
+                marginTop='20px'
+              >
                 Explore all our Solutions
               </Btn>
             </div>
@@ -217,9 +237,18 @@ export default function Home() {
 
       {/* CUSTOMER STORIES */}
       <section className={styles.customerStories}>
-        <h4>Customer Stories</h4>
-        <h2>Check out our latest projects</h2>
-        {/* <Button /> */}
+        <div className={styles.customerStoriesHeader}>
+          <h5>Customer Stories</h5>
+          <h2>Check out our latest projects</h2>
+        </div>
+        <Btn
+          border='#006AFF'
+          color='#006AFF'
+          btnIconColor='#006AFF'
+          marginTop='0px'
+        >
+          Explore all
+        </Btn>
         <HomeCarousel />
       </section>
 

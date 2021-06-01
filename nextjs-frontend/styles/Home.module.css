@@ -60,11 +60,18 @@
   justify-content: center;
 }
 
+.btnInsightsWrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 2.5rem;
+}
+
 .customerStories {
   display: flex;
   flex-direction: column;
   min-height: 120vh;
   width: 80%;
+  margin: 75px 0;
 }
 
 .header .gradientText {
@@ -141,7 +148,8 @@
 
 .productsHeader h5,
 .insightsHeader h5,
-.solutionsHeader h5 {
+.solutionsHeader h5,
+.customerStoriesHeader h5 {
   font-size: 18px;
   font-weight: bold;
   color: #006aff;
@@ -150,7 +158,8 @@
 
 .productsHeader h2,
 .insightsHeader h2,
-.solutionsHeader h2 {
+.solutionsHeader h2,
+.customerStoriesHeader h2 {
   font-size: 45px;
   font-weight: bold;
   line-height: 70px;
@@ -177,11 +186,6 @@
 .productsButton {
   text-align: center;
 }
-
-/* .insights {
-  padding-top: 100px;
-  padding-bottom: 158px;
-} */
 
 .solutionsContainer {
   background: linear-gradient(180deg, #141416 0%, #1a1a25 100%);
