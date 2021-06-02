@@ -5,6 +5,9 @@
 .carouselCards {
   width: 560px;
   height: 400px;
+  background-color: #fff;
+  border: 1px solid #fff;
+  border-radius: 8px;
 }
 
 .carouselControllers {
