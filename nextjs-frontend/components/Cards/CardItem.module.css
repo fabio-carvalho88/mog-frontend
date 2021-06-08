@@ -16,12 +16,12 @@
   padding-bottom: 30px;
 }
 
-.card p{
+.card p {
   font-family: 'Inter', sans-serif;
 }
 
-.card .icon svg{
-  color:#006aff;
+.card .icon svg {
+  color: #006aff;
 }
 
 .card a {

@@ -1,10 +1,14 @@
 import 'antd/dist/antd.css';
 import { Card, Badge } from 'antd';
-import styles from './CardHighlight';
 
 const CardHorizontal = (props) => {
   return (
-    <div className='wrapper'>
+    <div
+      className='wrapper'
+      style={{
+        marginTop: `${props.marginTop}`,
+      }}
+    >
       <Card
         className='cardHorizontal'
         style={{
@@ -22,6 +26,8 @@ const CardHorizontal = (props) => {
               height: '250px',
               borderTopLeftRadius: '8px',
               borderBottomLeftRadius: '8px',
+              borderTopRightRadius: 0,
+              borderBottomRightRadius: 0,
             }}
           />
         }

@@ -10,8 +10,8 @@
   padding: 0;
 }
 
-.cardHorizontal.and-card-cover {
-  width: 25%;
+.cardHighlightImage {
+  height: 520px;
 }
 
 .cardContent {
@@ -39,7 +39,7 @@
 }
 
 .wrapper::after {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -47,4 +47,12 @@
   height: 100%;
   background-image: linear-gradient(0deg, #1a1a1a 10%, #333 25%);
   opacity: 0.5;
+  border-radius: 8px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .cardHighlight,
+  .cardHighlightImage {
+    height: 305px;
+  }
 }
