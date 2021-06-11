@@ -1,5 +1,6 @@
 import {Tabs} from "antd";
 import CardItem from "../Cards/CardItem";
+// import CardTest from "../Cards/CardTest";
 import styles from "./Tabs.module.css";
 import Monitor from "../../assets/icons/Monitor";
 import Cloud from "../../assets/icons/Cloud";
@@ -22,7 +23,7 @@ const Filter = () => {
         className={styles.tabPanel}
       >
         <CardItem
-          icon={<Monitor iconColor={"#006AFF"} className={styles.iconHover} />}
+          icon={<Monitor />}
           title="OTT-TV  Platform"
           description={
             <span>
@@ -34,11 +35,11 @@ const Filter = () => {
         />
 
         <CardItem
-          icon={<Cloud iconColor={"#2F75EC"} className={styles.iconHover} />}
+          icon={<Cloud />}
           title="Cloud Media Production"
           description={
             <span>
-              Manage and execute all your media operations with MAM4PRO , a
+              Manage and execute all your media operations with MAM4PRO, a
               powerful and scalable sofware, fully deployable on your premises,
               or the Cloud.
             </span>
@@ -46,7 +47,7 @@ const Filter = () => {
         />
 
         <CardItem
-          icon={<Disk iconColor={"#2F75EC"} className={styles.iconHover} />}
+          icon={<Disk />}
           title="Private Cloud Media Farm"
           description={`Boosted IT servers (COTS) that can fully support HD/FHD/HD/SD video formats for media for dozens of media operations.`}
         />
@@ -56,9 +57,10 @@ const Filter = () => {
         key="2"
       >
         <CardItem
-          icon={<Monitor iconColor={"#006AFF"} className={styles.iconHover} />}
+          icon={<Monitor />}
           title="Private Cloud Media Farm"
           description={`Boosted IT servers (COTS) that can fully support HD/FHD/HD/SD video formats for media for dozens of media operations.`}
+          width="30%"
         />
       </TabPane>
     </Tabs>
