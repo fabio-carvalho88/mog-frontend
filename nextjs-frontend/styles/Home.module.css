@@ -23,7 +23,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url('../assets/img/header_backg.png');
+  background: url("../assets/img/header_backg.png");
   background-position: center;
   background-size: cover;
 }
@@ -63,7 +63,6 @@
 .customerStories {
   display: flex;
   flex-direction: column;
-  min-height: 120vh;
   width: 80%;
 }
 
@@ -92,7 +91,7 @@
 }
 
 .header .description {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   color: #f7f6fe;
   font-size: 20px;
   font-weight: 600;
@@ -150,7 +149,8 @@
 
 .productsHeader h2,
 .insightsHeader h2,
-.solutionsHeader h2 {
+.solutionsHeader h2,
+.testimonialsHeader h2 {
   font-size: 45px;
   font-weight: bold;
   line-height: 70px;
@@ -158,8 +158,9 @@
 
 .productsHeader p,
 .insightsHeader p,
-.solutionsHeader p {
-  font-family: 'Inter', sans-serif;
+.solutionsHeader p,
+.testimonialsHeader p {
+  font-family: "Inter", sans-serif;
   line-height: 150%;
   font-size: 16px;
 }
@@ -187,7 +188,8 @@
   background: linear-gradient(180deg, #141416 0%, #1a1a25 100%);
 }
 
-.solutionsWrapper {
+.solutionsWrapper,
+.testimonialsWrapper {
   padding: 118px 0;
   width: 80%;
   margin: auto !important;
@@ -200,6 +202,17 @@
 .solutionsCards {
   display: flex;
   justify-content: center;
+}
+
+.testimonialsHeader{
+  width: 85%;
+}
+
+.testimonialsCards{
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  justify-content: space-between;
 }
 
 .contactContainer {
