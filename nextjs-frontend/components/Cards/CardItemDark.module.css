@@ -7,6 +7,7 @@
   color: #f7f6fe;
   margin-bottom: 16px;
   margin-right: 0;
+  border: none;
 }
 
 .card h2 {
@@ -29,15 +30,27 @@
   cursor: pointer;
 }
 
-.card .icon {
-  font-size: 150%;
-  padding-bottom: 30px;
+.iconSVG {
+  stroke: #006aff;
 }
 
-.card .icon svg {
-  color: #006aff;
+.card:hover .iconSVG {
+  stroke: #fff;
 }
 
-.card:hover .icon svg {
+.playerIcon {
+  fill: #006aff;
+  stroke: none;
+}
+
+.card:hover .playerIcon {
+  fill: #fff;
+}
+
+.card a {
+  font-family: "Inter", sans-serif;
+}
+
+.card a:hover {
   color: #fff;
 }
